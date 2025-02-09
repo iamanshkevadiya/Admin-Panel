@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vuesy | Dashboard</title>
+        <link rel="shortcut icon" href="images/logo/logo-mini.svg" type="image/svg">
+        <!-- font css -->
+        <link rel="stylesheet" href="css/fonts.css">
+        <!-- icon css -->
+        <link rel="stylesheet" href="css/boxicons.css">
+        <!-- swiper css -->
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="page-wrapper">
+            <header>
+                <div class="logo-bar">
+                    <div class="logo">
+                        <a href="dashboard.html">
+                            <img src="images/logo/favicon.svg" class="main-logo" alt="logo">
+                        </a>
+                        <a href="dashboard.html">
+                            <img src="images/logo/logo-mini.svg" class="mini-logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="sub-header close-sidebar">
+                    <a href="javascript:void(0);" class="sidebar-btn">
+                        <i class='bx bx-menu'></i>
+                    </a>
+                    <div class="search-bar">
+                        <form action="" method="">
+                            <input type="search" name="" id="" placeholder="Search..." class="form-control">
+                            <span>
+                                <i class='bx bx-search' ></i>
+                            </span>
+                        </form>
+                    </div>
+                    <div class="profile-detail">
+                        <ul class="items-center">
+                            <li>
+                                <a href="javascript:void(0);" class="notification">
+                                    <i class='bx bxs-bell' ></i>
+                                </a>
+                                <ol class="dropdown">
+                                    <li><p>Notifications</p></li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="arror-i">
+                                            <i class='bx bxs-error-alt'></i>
+                                        </a>
+                                        <div class="arror-disc">
+                                            <h5>Application Error</h5>
+                                            <p>Just now</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="arror-i">
+                                            <i class='bx bxs-cog bx-rotate-180' ></i>
+                                        </a>
+                                        <div class="arror-disc">
+                                            <h5>Settings</h5>
+                                            <p>Private message</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="arror-i">
+                                            <i class='bx bxs-user'></i>
+                                        </a>
+                                        <div class="arror-disc">
+                                            <h5>New user registration</h5>
+                                            <p>2 days ago</p>
+                                        </div>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="profile-img">
+                                    <img src="images/profile-img.jpg" alt="profile-img">
+                                </a>
+                                <ol class="profile-dropdown">
+                                    <li>
+                                        <a href="javascript:void(0);" class="setting-i" >
+                                            <i class='bx bxs-cog bx-spin bx-rotate-270' ></i>
+                                        </a>
+                                        <div class="setting-disc">
+                                            <p>Setting</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="setting-i" >
+                                            <i class='bx bxs-log-out bx-flip-vertical' ></i>
+                                        </a>
+                                        <div class="setting-disc">
+                                            <p>Logout</p>
+                                        </div>
+                                    </li>
+                                </ol>
+                            </li>
+                            <!-- <li>
+                                <a href="javascript:void(0);" class="rounded">
+                                    <i class='bx bx-dots-horizontal-rounded'></i>
+                                </a>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </header> 
+        </div>
+        <div class="page-body-wrapper">
+                <div class="sidebar">
+                    <ul>
+                        <li class="dashboard">
+                            <a href="#">
+                                <i class='bx bxs-dashboard'></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class='bx bxs-layout' ></i>
+                                <span>UI Elements</span>
+                            </a>
+                            <div class="sidebar-dropdown-menu">
+                                <a href="#">
+                                    <span>Button</span>
+                                </a>
+                                <a href="#">
+                                    <span>Dropdown</span>
+                                </a>
+                                <a href="#">
+                                    <span>Typography</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class='bx bx-columns' ></i>
+                                <span>Form elements</span>
+                            </a>
+                            <div class="sidebar-dropdown-menu">
+                                <a href="#">
+                                    <span>Basic Elements</span>
+                                </a>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class='bx bxs-bar-chart-alt-2' ></i>
+                                <span>Charts</span>
+                            </a>
+                            <div class="sidebar-dropdown-menu">
+                                <a href="#">
+                                    <span>ChatUs</span>
+                                </a>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class='bx bxs-grid' ></i>
+                                <span>Tables</span>
+                            </a>
+                            <div class="sidebar-dropdown-menu">
+                                <a href="#">
+                                    <span>Basic Table</span>
+                                </a>                            
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class='bx bxl-netlify'></i>
+                                <span>Icons</span>
+                            </a>
+                            <div class="sidebar-dropdown-menu">
+                                <a href="#">
+                                    <span>Mdi icons</span>
+                                </a>                            
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class='bx bxs-user'></i>
+                                <span>User pages</span>
+                            </a>
+                            <div class="sidebar-dropdown-menu">
+                                <a href="login.html">
+                                    <span>Login</span>
+                                </a>
+                                <a href="login.html">
+                                    <span>Register</span>
+                                </a>                            
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class='bx bxs-error'></i>
+                                <span>Error pages</span>
+                            </a>
+                            <div class="sidebar-dropdown-menu">
+                                <a href="#">
+                                    <span>404</span>
+                                </a>
+                                <a href="#">
+                                    <span>500</span>
+                                </a>                            
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class='bx bxs-file-blank' ></i>
+                                <span>Documentation</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-panel">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-8 welcome-part">
+                                <h3>Welcome Aamir</h3>
+                                <h6>All systems are running smoothly! You have </h6>
+                                <span>3 unread alerts!</span>
+                            </div>
+                            <div class="col-4">
+                                <div class="manu-date">
+                                    <button>Today (10 Jan 2021)</button>
+                                    <div class="dropdown-manu-date">
+                                        <a href="#">January - March</a>
+                                        <a href="#">March - June</a>
+                                        <a href="#">June - August</a>
+                                        <a href="#">August - November</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 bangalore-card">
+                                <div class="table-bg">
+                                    <img src="images/people.svg" alt="people">
+                                    <div class="bangalore-weather">
+                                        <div class="sun">
+                                            <h1><i class='bx bx-sun'></i>31
+                                            <span>c</span>
+                                            </h1>
+                                        </div>
+                                        <div class="india">
+                                            <h4>Bangalore</h4>
+                                            <h6>India</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 rating-card">
+                                <div class="row row-mg">
+                                    <div class="col-6 booking-card">
+                                        <div class="booking">
+                                            <h4>Today’s Bookings</h4>
+                                            <h6>4006</h6>
+                                            <p>10.00% (30 days)</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 booking-card">
+                                        <div class="booking-2">
+                                            <h4>Total Bookings</h4>
+                                            <h6>61344</h6>
+                                            <p>22.00% (30 days)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 booking-card">
+                                        <div class="booking-3">
+                                            <h4>Number of Meetings</h4>
+                                            <h6>34040</h6>
+                                            <p>2.00% (30 days)</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 booking-card">
+                                        <div class="booking-4">
+                                            <h4>Number of Clients</h4>
+                                            <h6>47033</h6>
+                                            <p>0.22% (30 days)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="order-card">
+                                    <div class="order-details">
+                                        <h4>Order Details</h4>
+                                        <p>The total number of sessions within the date range. It is the period time a user is actively engaged with your website, page or app, etc</p>
+                                    </div>
+                                    <div class="order-value">
+                                        <div class="col-3 order-value-text">
+                                            <p>Order value</p>
+                                            <h3>12.3k</h3>
+                                        </div>
+                                        <div class="col-3 order-value-text">
+                                            <p>Orders</p>
+                                            <h3>14k</h3>
+                                        </div>
+                                        <div class="col-3 order-value-text">
+                                            <p>Users</p>
+                                            <h3>71.56%</h3>
+                                        </div>
+                                        <div class="col-3 order-value-text">
+                                            <p>Downloads</p>
+                                            <h3>34040</h3>
+                                        </div>
+                                    </div>
+                                    <div id="areachart"></div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="order-card">
+                                    <div class="order-details">
+                                        <h4>Sales Report</h4>
+                                        <p>The total number of sessions within the date range. It is the period time a user is actively engaged with your website, page or app, etc</p>
+                                    </div>
+                                    <div class="sales">
+                                       <ul>
+                                        <li>
+                                            <span style="background-color: rgb(152, 189, 255);"></span>
+                                            Offline Sales
+                                        </li>
+                                        <li>
+                                            <span style="background-color: rgb(75, 73, 172);"></span>
+                                            Online Sales
+                                        </li>
+                                       </ul>
+                                        <div id="columnchart"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <section>
+                            <div class="col-12 swiper-chart">
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="col-12">
+                                                <div class="Detailed-Reports-card">
+                                                    <div class="row">
+                                                        <div class="col-3">
+                                                            <div class="Detailed-Reports">
+                                                                <h4>Detailed Reports</h4>
+                                                                <h1>$34040</h1>
+                                                                <h3>North America</h3>
+                                                                <p>The total number of sessions within the date range. It is the period time a user is actively engaged with your website, page or app, etc</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-9">
+                                                            <div class="row">
+                                                                <div class="col-6 progress-bar-chart">
+                                                                    <div class="border-chart">
+                                                                        <table>
+                                                                            <tr>
+                                                                                <td class="text">Illinois</td>
+                                                                                <td class="w-100">
+                                                                                    <div class="progress">
+                                                                                        <div class="progress-bar"></div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <th>713</th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text">Washington</td>
+                                                                                <td class="w-100">
+                                                                                    <div class="progress">
+                                                                                        <div class="progress-bar-2"></div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <th>583</th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text">Mississippi</td>
+                                                                                <td class="w-100">
+                                                                                    <div class="progress">
+                                                                                        <div class="progress-bar-3"></div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <th>924</th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text">California</td>
+                                                                                <td class="w-100">
+                                                                                    <div class="progress">
+                                                                                        <div class="progress-bar-4"></div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <th>664</th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text">Maryland </td>
+                                                                                <td class="w-100">
+                                                                                    <div class="progress">
+                                                                                        <div class="progress-bar-5"></div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <th>560</th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text">Alaska</td>
+                                                                                <td class="w-100">
+                                                                                    <div class="progress">
+                                                                                        <div class="progress-bar-6"></div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <th>793</th>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <div id="Piechart"></div>
+                                                                    <div class="pie">
+                                                                        <div class="t-sales">
+                                                                            <div style="width:20px; height:20px; border-radius: 50%; background-color: #4B49AC"></div>
+                                                                            <p>Offline sales</p>
+                                                                            <p class="number">495343</p>
+                                                                        </div>
+                                                                        <div class="t-sales">
+                                                                            <div style="width:20px; height:20px; border-radius: 50%; background-color: #FFC100"></div>
+                                                                            <p>Online sales</p>
+                                                                            <p class="number">630983</p>
+                                                                        </div>
+                                                                        <div class="t-sales">
+                                                                            <div style="width:20px; height:20px; border-radius: 50%; background-color: #248AFD"></div>
+                                                                            <p>Returns</p>
+                                                                            <p class="number">290831</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="col-12">
+                                                <div class="Detailed-Reports-card">
+                                                    <div class="row">
+                                                        <div class="col-3">
+                                                            <div class="Detailed-Reports">
+                                                                <h4>Detailed Reports</h4>
+                                                                <h1>$34040</h1>
+                                                                <h3>North America</h3>
+                                                                <p>The total number of sessions within the date range. It is the period time a user is actively engaged with your website, page or app, etc</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-9">
+                                                            <div class="row">
+                                                                <div class="col-6 progress-bar-chart">
+                                                                    <div class="border-chart">
+                                                                        <table>
+                                                                            <tr>
+                                                                                <td class="text">Illinois</td>
+                                                                                <td class="w-100">
+                                                                                    <div class="progress">
+                                                                                        <div class="progress-bar"></div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <th>713</th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text">Washington</td>
+                                                                                <td class="w-100">
+                                                                                    <div class="progress">
+                                                                                        <div class="progress-bar-2"></div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <th>583</th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text">Mississippi</td>
+                                                                                <td class="w-100">
+                                                                                    <div class="progress">
+                                                                                        <div class="progress-bar-3"></div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <th>924</th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text">California</td>
+                                                                                <td class="w-100">
+                                                                                    <div class="progress">
+                                                                                        <div class="progress-bar-4"></div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <th>664</th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text">Maryland </td>
+                                                                                <td class="w-100">
+                                                                                    <div class="progress">
+                                                                                        <div class="progress-bar-5"></div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <th>560</th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text">Alaska</td>
+                                                                                <td class="w-100">
+                                                                                    <div class="progress">
+                                                                                        <div class="progress-bar-6"></div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <th>793</th>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <div id="Apiechart"></div>
+                                                                    <div class="pie">
+                                                                        <div class="t-sales">
+                                                                            <div style="width:20px; height:20px; border-radius: 50%; background-color: #4B49AC"></div>
+                                                                            <p>Offline sales</p>
+                                                                            <p class="number">495343</p>
+                                                                        </div>
+                                                                        <div class="t-sales">
+                                                                            <div style="width:20px; height:20px; border-radius: 50%; background-color: #FFC100"></div>
+                                                                            <p>Online sales</p>
+                                                                            <p class="number">630983</p>
+                                                                        </div>
+                                                                        <div class="t-sales">
+                                                                            <div style="width:20px; height:20px; border-radius: 50%; background-color: #248AFD"></div>
+                                                                            <p>Returns</p>
+                                                                            <p class="number">290831</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- If we need pagination -->
+                                    <!-- <div class="swiper-pagination"></div> -->
+                                
+                                    <!-- If we need navigation buttons -->
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                
+                                    <!-- If we need scrollbar -->
+                                    <!-- <div class="swiper-scrollbar"></div> -->
+                                </div>
+                            </div>
+                        </section>
+                        <div class="row products-card">
+                            <div class="col-12">
+                                <div class="Top-Products">
+                                    <div class="products">
+                                        <p>Top Products</p>
+                                    </div>
+                                    <div class="product-price">
+                                        <table style="width:100%">
+                                            <tr>
+                                                <th>Product</th>
+                                                <th>Price</th>
+                                                <th>Date</th>
+                                                <th>Status</th>
+                                            </tr>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Search Engine Marketing	</td>
+                                                    <th>$362</th>
+                                                    <td>21 Sep 2018</td>
+                                                    <td>
+                                                        <div class="box">Completed</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Search Engine Optimization</td>
+                                                    <th>$1169</th>
+                                                    <td>13 Jun 2018</td>
+                                                    <td>
+                                                        <div class="box">Completed</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Display Advertising</td>
+                                                    <th>$551</th>
+                                                    <td>28 Sep 2018</td>
+                                                    <td>
+                                                        <div class="box-1">Pending</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Pay Per Click Advertising</td>
+                                                    <th>$523</th>
+                                                    <td>30 Jun 2018</td>
+                                                    <td>
+                                                        <div class="box-1">Pending</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>E-Mail Marketing</td>
+                                                    <th>$781</th>
+                                                    <td>01 Nov 2018</td>
+                                                    <td>
+                                                        <div class="box-2">Cancelled</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Referral Marketing</td>
+                                                    <th>$283</th>
+                                                    <td>20 Mar 2018</td>
+                                                    <td>
+                                                        <div class="box-1">Pending</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Social media marketing</td>
+                                                    <th>$897</th>
+                                                    <td>26 Oct 2018</td>
+                                                    <td>
+                                                        <div class="box">Completed</div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row Projects-card">
+                            <div class="col-4">
+                                <div class="Top-Projects">
+                                    <div class="Projects">
+                                        <p>Projects</p>
+                                    </div>
+                                    <div class="Projects-order">
+                                        <table style="width:100%">
+                                            <tr>
+                                                <th>Places</th>
+                                                <th>Orders</th>
+                                                <th>Users</th>
+                                            </tr>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Kentucky</td>
+                                                    <th>65 (2.15%)</th>
+                                                    <td>65</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Ohio</td>
+                                                    <th>54 (3.25%)</th>
+                                                    <td>51</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nevada</td>
+                                                    <th>22 (2.22%)</th>
+                                                    <td>32</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>North Carolina</td>
+                                                    <th>46 (3.27%)</th>
+                                                    <td>15</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Montana</td>
+                                                    <th>17 (1.25%)</th>
+                                                    <td>25</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nevada</td>
+                                                    <th>52 (3.11%)</th>
+                                                    <td>71</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Louisiana</td>
+                                                    <th>25 (1.32%)</th>
+                                                    <td>14</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="row">
+                                    <div class="Data-charts">
+                                        <p>Charts</p>
+                                    <div class="Data-box">
+                                        <div class="Data-1">
+                                            <p>Data 1</p>
+                                            <div class="line-k">
+                                                <div class="line">
+                                                    <div class="K"></div>
+                                                </div>
+                                                <p>5k</p>
+                                            </div>
+                                        </div>
+                                        <div class="Data-1">
+                                            <p>Data 2</p>
+                                            <div class="line-k">
+                                                <div class="line">
+                                                    <div class="K-2"></div>
+                                                </div>
+                                                <p>1k</p>
+                                            </div>
+                                        </div>
+                                        <div class="Data-1">
+                                            <p>Data 3</p>
+                                            <div class="line-k">
+                                                <div class="line">
+                                                    <div class="K-3"></div>
+                                                </div>
+                                                <p>992</p>
+                                            </div>
+                                        </div>
+                                        <div class="Data-1 Data-4">
+                                            <p>Data 4</p>
+                                            <div class="line-k">
+                                                <div class="line">
+                                                    <div class="K-4"></div>
+                                                </div>
+                                                <p>687</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="metting">
+                                    <div class="number-of-metting">
+                                        <h4>Number Of Meetings</h4>
+                                        <h3>34040</h3>
+                                        <p>The total number of sessions within the date range.It is calculated as the sum . </p>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="notification-card">
+                                        <p>Notifications</p>
+                                        <div class="notification-profile">
+                                            <div class="profile-1">
+                                                <img src="images/profile-img.jpg" alt="Profile-image">
+                                                <div class="profile-text">
+                                                    <p>Isabella Becker</p>
+                                                    <h6>Sales dashboard have been created</h6>
+                                                    <span style="font-size: 11.5px;">9:30 am</span>
+                                                </div>
+                                            </div>
+                                            <div class="profile-1">
+                                                <img src="images/profile-2.jpg" alt="Profile-image">
+                                                <div class="profile-text">
+                                                    <p>Adam Warren</p>
+                                                    <h6>You have done a great job #TW111</h6>
+                                                    <span style="font-size: 11.5px;">10:30 am</span>
+                                                </div>
+                                            </div>
+                                            <div class="profile-1">
+                                                <img src="images/profile-3.jpg" alt="Profile-image">
+                                                <div class="profile-text">
+                                                    <p>Leonard Thornton</p>
+                                                    <h6>Sales dashboard have been created</h6>
+                                                    <span style="font-size: 11.5px;">11:30 am</span>
+                                                </div>
+                                            </div>
+                                            <div class="profile-1">
+                                                <img src="images/profile-4.jpg" alt="Profile-image">
+                                                <div class="profile-text">
+                                                    <p>George Morrison</p>
+                                                    <h6>Sales dashboard have been created</h6>
+                                                    <span style="font-size: 11.5px;">8:50 am</span>
+                                                </div>
+                                            </div>
+                                            <div class="profile-1">
+                                                <img src="images/profile-5.jpg" alt="Profile-image">
+                                                <div class="profile-text">
+                                                    <p>Ryan Cortez</p>
+                                                    <h6>Herbs are fun and easy to grow.</h6>
+                                                    <span style="font-size: 11.5px;">9:00 am</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 Advanced-card">
+                                <div class="card">
+                                    <div class="table-text">
+                                        <p>Advanced Table</p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="table-details">
+                                                <table class="dataTable" style="width: 100%;" role="grid">
+                                                    <thead>
+                                                        <tr class="tr-title">
+                                                            <th>Quote#</th>
+                                                            <th>Product</th>
+                                                            <th>Business type</th>
+                                                            <th>Policy holder</th>
+                                                            <th>Premium</th>
+                                                            <th>Status</th>
+                                                            <th>Updated at</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="tb-title">
+                                                        <tr class="odd">
+                                                            <td class="select-checkbox">Incs234</td>
+                                                            <td>Car insurance</td>
+                                                            <td>Business type 1</td>
+                                                            <td>Jesse Thomas</td>
+                                                            <td>$1200</td>
+                                                            <td>In progress</td>
+                                                            <td>25/04/2020</td>
+                                                        </tr>
+                                                        <tr class="odd">
+                                                            <td class="select-checkbox">Incs234</td>
+                                                            <td>Car insurance</td>
+                                                            <td>Business type 1</td>
+                                                            <td>Jesse Thomas</td>
+                                                            <td>$1200</td>
+                                                            <td>Active</td>
+                                                            <td>25/04/2020</td>
+                                                        </tr>
+                                                        <tr class="odd">
+                                                            <td class="select-checkbox">Incs234</td>
+                                                            <td>Car insurance</td>
+                                                            <td>Business type 1</td>
+                                                            <td>Jesse Thomas</td>
+                                                            <td>$1200</td>
+                                                            <td>Expired</td>
+                                                            <td>25/04/2020</td>
+                                                        </tr>
+                                                        <tr class="odd">
+                                                            <td class="select-checkbox">Incs234</td>
+                                                            <td>Car insurance</td>
+                                                            <td>Business type 1</td>
+                                                            <td>Jesse Thomas</td>
+                                                            <td>$1200</td>
+                                                            <td>In progress</td>
+                                                            <td>25/04/2020</td>
+                                                        </tr>
+                                                        <tr class="odd">
+                                                            <td class="select-checkbox">Incs234</td>
+                                                            <td>Car insurance</td>
+                                                            <td>Business type 1</td>
+                                                            <td>Jesse Thomas</td>
+                                                            <td>$1200</td>
+                                                            <td>Active</td>
+                                                            <td>25/04/2020</td>
+                                                        </tr>
+                                                        <tr class="odd">
+                                                            <td class="select-checkbox">Incs234</td>
+                                                            <td>Car insurance</td>
+                                                            <td>Business type 1</td>
+                                                            <td>Jesse Thomas</td>
+                                                            <td>$1200</td>
+                                                            <td>Active</td>
+                                                            <td>25/04/2020</td>
+                                                        </tr>
+                                                        <tr class="odd">
+                                                            <td class="select-checkbox">Incs234</td>
+                                                            <td>Car insurance</td>
+                                                            <td>Business type 1</td>
+                                                            <td>Jesse Thomas</td>
+                                                            <td>$1200</td>
+                                                            <td>Active</td>
+                                                            <td>25/04/2020</td>
+                                                        </tr>
+                                                        <tr class="odd">
+                                                            <td class="select-checkbox">Incs234</td>
+                                                            <td>Car insurance</td>
+                                                            <td>Business type 1</td>
+                                                            <td>Jesse Thomas</td>
+                                                            <td>$1200</td>
+                                                            <td>Expired</td>
+                                                            <td>25/04/2020</td>
+                                                        </tr>
+                                                        <tr class="odd">
+                                                            <td class="select-checkbox">Incs234</td>
+                                                            <td>Car insurance</td>
+                                                            <td>Business type 1</td>
+                                                            <td>Jesse Thomas</td>
+                                                            <td>$1200</td>
+                                                            <td>Active</td>
+                                                            <td>25/04/2020</td>
+                                                        </tr>
+                                                        <tr class="odd">
+                                                            <td class="select-checkbox">Incs234</td>
+                                                            <td>Car insurance</td>
+                                                            <td>Business type 1</td>
+                                                            <td>Jesse Thomas</td>
+                                                            <td>$1200</td>
+                                                            <td>In progress</td>
+                                                            <td>25/04/2020</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer>
+                                <div class="footer-text">
+                                    <div class="footer">
+                                        <span>Copyright © 2021.  Premium
+                                        <a href="#">Bootstrap admin template</a>
+                                        from BootstrapDash. All rights reserved.
+                                        </span>
+                                        <span>Hand-crafted & made with </span>
+                                    </div>
+                                    <div class="footer">
+                                        <span>Distributed by Themewagon</span>
+                                    </div>
+                                </div>
+                        </footer>
+                    </div>
+                </div>
+        </div>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+        <script>
+            $(document).ready(function(){
+                $(".sidebar-dropdown > a").click(function(){
+                    $(".sidebar-dropdown-menu").slideUp(200);
+                    if($(this).parent().hasClass("active")){
+                        $(".sidebar-dropdown").removeClass("active");
+                        $(this).parent().removeClass("active");
+                    }
+                    else{
+                        $(".sidebar-dropdown").removeClass("active");
+                        $(this).next(".sidebar-dropdown-menu").slideDown(200);
+                        $(this).parent().addClass("active");
+                    }
+                });
+                // slider code
+                const swiper = new Swiper('.swiper', {
+                    loop: true,
+                    // pagination: {
+                    //     el: '.swiper-pagination',
+                    // },  
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+
+                    // And if we need scrollbar
+                    // scrollbar: {
+                    //     el: '.swiper-scrollbar',
+                    // },
+                    });
+                // sidebar code
+                $(".sidebar-btn").click(function(){
+                    $(".sidebar").toggleClass("close-sidebar");
+                    $(".logo-bar").toggleClass("close-sidebar");
+                });
+            });
+        </script>
+        <!-- -------------------------------------------------------------------------------------------------- -->
+        <script>
+            var options = {
+            series: [{
+                name: 'series1',
+                data: [650, 600, 620, 350, 400, 320, 800, 610, 650, 380, 580, 380, 630, 500, 1000, 620]
+            }, 
+            {
+            name: 'series2',
+                data: [400, 450, 400, 500, 480, 600, 420, 570, 420, 570, 410, 700, 410, 590, 700, 400]
+            }],
+            chart: {
+                height: 370,
+                type: 'area',
+                toolbar : {
+                show: false,
+                }
+            },
+            legend: {
+                show: false,
+            },
+            dataLabels: {
+                enabled: false
+            },
+            stroke: {
+                curve: 'smooth'
+            },
+            };
+
+            var chart = new ApexCharts(document.querySelector("#areachart"), options);
+            chart.render();
+        </script>
+        <!-- ----------------------------------------------------------------------------------------------- ----->
+        <script>
+                var options = {
+            series: [{
+                name: 'Offline Sale',
+                data: [480, 230, 470, 210, 330]
+            },
+            {
+            name: 'Online Sale',
+                data: [400, 340, 550, 480, 170]
+            },
+            ],
+            chart: {
+                type: 'bar',
+                height: 370,
+                toolbar : {
+                show: false,
+                }
+            },
+            
+            colors: ['rgb(152, 189, 255)', 'rgb(75, 73, 172)'],
+            plotOptions: {
+                bar: {
+                    horizontal: false,
+                    columnWidth: '55%',
+                    endingShape: 'rounded'
+                },
+            },
+            dataLabels: {
+                enabled: false
+            },
+            stroke: {
+                show: true,
+                width: 2,
+                colors: ['transparent']
+            },
+            legend: {
+                show: false,
+            },
+            xaxis: {
+                categories: ['Jan','Feb', 'Mar', 'Apr', 'May'],
+            },
+            yaxis: {
+                title: {
+                text: '$ (thousands)'
+                }
+            },
+            fill: {
+                opacity: 1
+            },
+            tooltip: {
+                y: {
+                  formatter: function (val) {
+                  return "$ " + val + " thousands"
+                }
+                }
+            }
+            };
+
+            var chart = new ApexCharts(document.querySelector("#columnchart"), options);
+            chart.render();
+        </script>
+       <!-- ----------------------------------------------------------------------------------------------------->
+       <script>
+            var options = {
+                series: [100, 50, 50],
+                labels: ['Offline Sales', 'Online sales', 'Returns'],
+            chart: {
+                type: 'donut',
+                width: 540,
+                height: 281,
+            },
+            dataLabels: {
+                enabled: false,
+            },
+            responsive: [{
+                breakpoint: 480,
+                options: {
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }]
+        };
+
+        var chart = new ApexCharts(document.querySelector("#Piechart"), options);
+        chart.render();
+       </script>
+       <!-- -------------------------------------------------------------------------------------------------- -->
+       <script>
+        var options = {
+            series: [100, 50, 50],
+            labels: ['Offline Sales', 'Online sales', 'Returns'],
+            chart: {
+                type: 'donut',
+                width: 540,
+                height: 281,
+            },
+            dataLabels: {
+                enabled: false
+            },
+            responsive: [{
+                breakpoint: 480,
+                options: {
+                legend: {
+                    show: false
+                }
+            }
+            }],
+            legend: {
+            position: 'right',
+            offsetY: 0,
+            height: 230,
+            }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#Apiechart"), options);
+        chart.render();
+       </script>
+    </body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vuesy | Dashboard</title>
+        <link rel="shortcut icon" href="images/logo/logo-mini.svg" type="image/svg">
+        <!-- font css -->
+        <link rel="stylesheet" href="css/fonts.css">
+        <!-- icon css -->
+        <link rel="stylesheet" href="css/boxicons.css">
+        <!-- swiper css -->
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="overflow">
+            <div class="container-scroller">
+                <div class="content-wrapper">
+                    <div class="sign-body">
+                        <div class="row">
+                            <div class="col-4 sign-card">
+                                <div class="sign-up">
+                                    <div class="Sign-up-img">
+                                        <a href="dashboard.html">
+                                            <img src="images/logo/favicon.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <h4>Hello! let's get started</h4>
+                                    <h6 class="steps">Sign in to continue.</h6>
+                                    <form action="">
+                                        <div class="username">
+                                            <input type="text" placeholder="Username">
+                                        </div>
+                                        <div class="username">
+                                            <input type="password" placeholder="Password">
+                                        </div>
+                                        <div class="Sign-up">
+                                            <button>SIGN IN</button>
+                                        </div>
+                                        <div class="forgot">
+                                            <div class="forgot-box">
+                                                <input type="checkbox"/>
+                                                <p>Keep me signed in</p>
+                                            </div>
+                                            <h6 class="forgot-disc">Forgot password?</h6>
+                                        </div>
+                                        <div class="login">
+                                            Don't have an account?  
+                                            <a href="sign-up.html">Create</a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+        <script>
+            $(document).ready(function(){
+                $(".sidebar-dropdown > a").click(function(){
+                    $(".sidebar-dropdown-menu").slideUp(200);
+                    if($(this).parent().hasClass("active")){
+                        $(".sidebar-dropdown").removeClass("active");
+                        $(this).parent().removeClass("active");
+                    }
+                    else{
+                        $(".sidebar-dropdown").removeClass("active");
+                        $(this).next(".sidebar-dropdown-menu").slideDown(200);
+                        $(this).parent().addClass("active");
+                    }
+                });
+                // slider code
+                const swiper = new Swiper('.swiper', {
+                    loop: true,
+                    // pagination: {
+                    //     el: '.swiper-pagination',
+                    // },  
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+
+                    // And if we need scrollbar
+                    // scrollbar: {
+                    //     el: '.swiper-scrollbar',
+                    // },
+                    });
+                // sidebar code
+                $(".sidebar-btn").click(function(){
+                    $(".sidebar").toggleClass("close-sidebar");
+                    $(".logo-bar").toggleClass("close-sidebar");
+                });
+            });
+        </script>
+        <!-- -------------------------------------------------------------------------------------------------- -->
+        <script>
+            var options = {
+            series: [{
+                name: 'series1',
+                data: [650, 600, 620, 350, 400, 320, 800, 610, 650, 380, 580, 380, 630, 500, 1000, 620]
+            }, 
+            {
+            name: 'series2',
+                data: [400, 450, 400, 500, 480, 600, 420, 570, 420, 570, 410, 700, 410, 590, 700, 400]
+            }],
+            chart: {
+                height: 370,
+                type: 'area',
+                toolbar : {
+                show: false,
+                }
+            },
+            legend: {
+                show: false,
+            },
+            dataLabels: {
+                enabled: false
+            },
+            stroke: {
+                curve: 'smooth'
+            },
+            };
+
+            var chart = new ApexCharts(document.querySelector("#areachart"), options);
+            chart.render();
+        </script>
+        <!-- ----------------------------------------------------------------------------------------------- ----->
+        <script>
+                var options = {
+            series: [{
+                name: 'Offline Sale',
+                data: [480, 230, 470, 210, 330]
+            },
+            {
+            name: 'Online Sale',
+                data: [400, 340, 550, 480, 170]
+            },
+            ],
+            chart: {
+                type: 'bar',
+                height: 370,
+                toolbar : {
+                show: false,
+                }
+            },
+            
+            colors: ['rgb(152, 189, 255)', 'rgb(75, 73, 172)'],
+            plotOptions: {
+                bar: {
+                    horizontal: false,
+                    columnWidth: '55%',
+                    endingShape: 'rounded'
+                },
+            },
+            dataLabels: {
+                enabled: false
+            },
+            stroke: {
+                show: true,
+                width: 2,
+                colors: ['transparent']
+            },
+            legend: {
+                show: false,
+            },
+            xaxis: {
+                categories: ['Jan','Feb', 'Mar', 'Apr', 'May'],
+            },
+            yaxis: {
+                title: {
+                text: '$ (thousands)'
+                }
+            },
+            fill: {
+                opacity: 1
+            },
+            tooltip: {
+                y: {
+                  formatter: function (val) {
+                  return "$ " + val + " thousands"
+                }
+                }
+            }
+            };
+
+            var chart = new ApexCharts(document.querySelector("#columnchart"), options);
+            chart.render();
+        </script>
+        <!-- ----------------------------------------------------------------------------------------------------->
+        <script>
+            var options = {
+                series: [100, 50, 50],
+                labels: ['Offline Sales', 'Online sales', 'Returns'],
+            chart: {
+                type: 'donut',
+                width: 540,
+                height: 281,
+            },
+            dataLabels: {
+                enabled: false,
+            },
+            responsive: [{
+                breakpoint: 480,
+                options: {
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }]
+        };
+
+        var chart = new ApexCharts(document.querySelector("#Piechart"), options);
+        chart.render();
+        </script>
+        <!-- -------------------------------------------------------------------------------------------------- -->
+       <script>
+        var options = {
+            series: [100, 50, 50],
+            labels: ['Offline Sales', 'Online sales', 'Returns'],
+            chart: {
+                type: 'donut',
+                width: 540,
+                height: 281,
+            },
+            dataLabels: {
+                enabled: false
+            },
+            responsive: [{
+                breakpoint: 480,
+                options: {
+                legend: {
+                    show: false
+                }
+            }
+            }],
+            legend: {
+            position: 'right',
+            offsetY: 0,
+            height: 230,
+            }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#Apiechart"), options);
+        chart.render();
+       </script>
+    </body>
+</html>
